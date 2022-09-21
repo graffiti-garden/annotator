@@ -1,4 +1,4 @@
-import Logoot from 'https://graffiti.csail.mit.edu/graffiti-x-js/logoot.js'
+import Logoot from '../../graffiti-x-js/logoot.js'
 
 export default function({myID, useCollection}) { return {
 
