@@ -1,0 +1,94 @@
+:root {
+  --selection: lightblue;
+}
+
+#app {
+  display: flex;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box
+}
+
+*::selection{
+  background: var(--selection);
+}
+
+#document {
+  height: 100vh;
+  width: 70vw;
+  background: white;
+  padding: 1em;
+  border-right: 1px solid black;
+}
+
+#sidebar, #document {
+  padding: 1em;
+
+}
+
+#sidebar {
+  background: NavajoWhite;
+}
+
+h1, h2 {
+  text-align: center;
+  margin: 0.5em
+}
+
+input, textarea {
+  width: 100%;
+  font-family: inherit;
+}
+
+textarea {
+  height: 5em;
+}
+
+li {
+  list-style: none;
+}
+
+ul > li {
+
+  background: white;
+  margin-top: 1rem;
+  border: 1px solid black;
+  padding: 1em;
+}
+
+menu {
+  border-top: 1px solid black;
+  display: flex;
+  justify-content: end;
+  margin-top: 1rem;
+}
+
+menu li {
+  font-size: 60%;
+  display: block;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+button {
+  font-size: inherit;
+}
+
+:is(button,input[type=submit]):hover {
+  cursor: pointer;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid black;
+  outline: none;
+  margin: 2rem;
+}

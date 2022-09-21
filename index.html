@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Graffiti Text Annotator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./style.css" rel="stylesheet" />
+</head>
+<body>
+
+  <div id="app">
+    <document></document>
+  </div>
+
+  <script src="https://unpkg.com/vue@3.2.37/dist/vue.global.prod.js"></script>
+  <script type="module">
+    import Graffiti from 'https://graffiti.csail.mit.edu/graffiti-x-vue/graffiti.js'
+    import Doc from './components/document.js'
+
+    Graffiti(Vue).then(graffiti=> {
+      Vue.createApp()
+        .component('document', Doc(graffiti))
+        .mount('#app')
+    })
+  </script>
+</body>
+</html>
