@@ -27,6 +27,7 @@ body {
   background: white;
   padding: 1em;
   border-right: 1px solid black;
+  white-space: pre-wrap
 }
 
 #sidebar, #document {
